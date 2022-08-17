@@ -82,13 +82,18 @@ label , #img{
 }
 .img{
   width:100%;
-  margin-top:10%;
+  height:100%;
+  object-fit: cover;
 }
 #submitSpan{
+  height:36px;
   margin-top:16px;
   margin-left:auto;
 }
 #upload{
+  position:absolute;
+  bottom:38px;
+  right:0;
   padding:8px 4px;
   background-color:black;
   color:white;
@@ -98,8 +103,10 @@ label , #img{
 
 /*footer*/
 .upImg{
-  height:34px;
-  margin-right:6px;
+  height:32px;
+  width:50px;
+  object-fit: cover;
+  margin-right:56px;
 }
 
 /*bigImg*/
@@ -122,5 +129,6 @@ label , #img{
 }
 .bigImg{
   width:100%;
-  margin-top:15px;
+  height:100%;
+  object-fit: cover;
 }

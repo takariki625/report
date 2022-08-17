@@ -1,13 +1,14 @@
-<?php 
-
-define("db","mysql:dbname=report;host=localhost");
-define("user","root");
-define("pw","");
-/** 
-define("db","mysql:dbname=makun6250_report;host=mysql1.php.xdomain.ne.jp;");
-define("user","makun6250_php");
-define("pw","taka6250");
-*/
+<?php
+$b=false; 
+if($b){ 
+  define("db","mysql:dbname=report;host=localhost");
+  define("user","root");
+  define("pw","");
+}else{
+  define("db","mysql:dbname=makun6250_report;host=mysql1.php.xdomain.ne.jp;");
+  define("user","makun6250_php");
+  define("pw","taka6250");
+}
 class data{
   private $pdo;
   function __construct(){

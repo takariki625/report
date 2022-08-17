@@ -43,9 +43,9 @@ class Edit{
       if(!empty($_FILES["image$i"])){
         $name=$_FILES["image$i"]["name"];
         $tmpName=$_FILES["image$i"]["tmp_name"];
-        move_uploaded_file($tmpName,"../add/$name");
-        $this->pdo->query("UPDATE list SET image$i='../add/$name' WHERE id=$id");
-        $imgList["image$i"]="../add/$name";
+        move_uploaded_file($tmpName,"../img/$name");
+        $this->pdo->query("UPDATE list SET image$i='../img/$name' WHERE id=$id");
+        $imgList["image$i"]="../img/$name";
       }
     }
     return $imgList;

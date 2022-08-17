@@ -125,7 +125,7 @@ footer.addEventListener("click", e =>{
       }
     })
   }
-  if(e.target.tagName === "IMG"){
+  if(e.target.tagName === "IMG" && e.target.className !== "upImg"){
     const div=document.createElement("div");
     div.id="fild";
     const img=e.target.cloneNode(true)
