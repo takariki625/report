@@ -178,7 +178,7 @@ function imgEdit(number , image){
     const img=document.createElement("img");
     img.src=image;
     img.name=number;
-    img.classList.add("bigImg");
+    img.classList.add("img");
     const span=document.createElement("span");
     span.id="img";
     span.appendChild(img);
