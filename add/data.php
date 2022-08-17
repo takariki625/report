@@ -1,5 +1,5 @@
 <?php
-$b=true; 
+$b=false; 
 if($b){ 
   define("db","mysql:dbname=report;host=localhost");
   define("user","root");
