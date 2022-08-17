@@ -1,0 +1,40 @@
+header , main{
+  width:90%;
+  margin:26px auto;
+  text-align: center;
+}
+input[type="text"]{
+  width:80%;
+}
+input[type="submit"]{
+  display:none;
+}
+ul{
+  width:80%;
+  list-style:none;
+  margin:auto;
+  padding:0;
+  display:flex;
+  flex-wrap: wrap;
+}
+li{
+  text-align: left;
+  width:100%;
+  margin-top:10px;
+  background-color: aquamarine;
+  border-radius:12px;
+  padding:6px 0 6px 6px;
+  display:flex;
+  white-space: wrap;
+  overflow: scroll;
+  cursor: pointer;
+}
+li::-webkit-scrollbar{
+  display:none
+}
+span{
+  margin-left:auto;
+  margin-right:8px;
+  font-size:18px;
+  cursor: pointer;
+}
